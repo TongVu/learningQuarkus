@@ -45,5 +45,5 @@ mvn package -Dquarkus.container-image.build=true -Dquarkus.package.type=native -
 docker run -i --rm -p 8080:8080 -d tphvu/rest-book:native
 
 # Create a whole quarkus project:
-mvn -U io.quarkus-maven-plugin:create -DprojectGroupId=com.axonactive.com -DprojectArtifactId=<name-of-the-project> -Dextension="resteasy-jsonb-container-image-docker"
+ mvn -U io.quarkus:quarkus-maven-plugin:create -DprojectGroupId=com.axonactive.com -DprojectArtifactId=db-with-quarkus -Dextension="resteasy-jsonb-container-image-docker"
 ```
